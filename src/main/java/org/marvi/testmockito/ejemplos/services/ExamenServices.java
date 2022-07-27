@@ -6,5 +6,8 @@ import java.util.Optional;
 
 public interface ExamenServices {
     Optional<Examen> findExamenPorNombre(String nombre);
+
     Examen findExamenPorNombreConPreguntas(String nombre);
+
+    Examen guardar(Examen examen);
 }
